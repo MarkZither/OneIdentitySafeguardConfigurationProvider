@@ -4,6 +4,9 @@ namespace SampleWebApi {
         public static void Main(string[] args) {
             var builder = WebApplication.CreateBuilder(args);
 
+            // setup configuration
+            builder.Configuration.AddOneIdentitySafeguardConfiguration();
+
             // Add services to the container.
 
             builder.Services.AddControllers();
