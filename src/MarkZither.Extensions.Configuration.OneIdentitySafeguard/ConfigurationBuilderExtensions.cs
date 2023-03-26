@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Microsoft.Extensions.Configuration;
 public static class ConfigurationBuilderExtensions {
-    public static IConfigurationBuilder AddEntityConfiguration(
+    public static IConfigurationBuilder AddOneIdentitySafeguardConfiguration(
     this IConfigurationBuilder builder) {
         var tempConfig = builder.Build();
 
