@@ -4,6 +4,6 @@ public class OneIdentitySafeguardConfigurationSource : IConfigurationSource
 {
     public IConfigurationProvider Build(IConfigurationBuilder builder)
     {
-        throw new NotImplementedException();
+        return new OneIdentitySafeguardConfigurationProvider();
     }
 }
